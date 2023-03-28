@@ -1,5 +1,4 @@
-﻿
-#include <iostream>
+﻿#include <iostream>
 #include "Memory.h"
 #include "pch.h"               		                 // CREDIT BY VIPSOURCES CODE: t.me/vipsourcescode/19							         // CREDIT BY VIPSOURCES CODE: t.me/vipsourcescode/19
 #include "resource.h"						         // CREDIT BY VIPSOURCES CODE: t.me/vipsourcescode/19
@@ -15,11 +14,57 @@
 #include "MD5.h"		                              
 #include <Windows.h>
 #include <string>
-#include "api/skStr.h"                            
+#include "skStr.h"           
+#include <Windows.h>
+#include <chrono>
+#include "discord_rpc.h"
+#include "discord_register.h"
+static bool gInit, gRPC = true;
+void SetupDiscord()
+{
+	if (gRPC)																			  //UPDATE THIS
+	{																					  //UPDATE THIS
+		DiscordEventHandlers handlers;													  //UPDATE THIS
+		memset(&handlers, 0, sizeof(handlers));											  //UPDATE THIS
+		Discord_Initialize("1045580623026335795", &handlers, 1, "0");					  //UPDATE THIS
+	}																					  //UPDATE THIS
+	else																				  //UPDATE THIS
+	{																					  //UPDATE THIS
+		Discord_Shutdown();																  //UPDATE THIS
+	}																					  //UPDATE THIS
+}																						  //UPDATE THIS
+																						  //UPDATE THIS
+																						  //UPDATE THIS
+static void UpdateDiscord()
+{
+	static int64_t StartTime = std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count();  //UPDATE THIS
+																																			   //UPDATE THIS
+	if (gRPC)															 //UPDATE THIS
+	{																	 //UPDATE THIS
+		DiscordRichPresence discordPresence;							 //UPDATE THIS
+		memset(&discordPresence, 0, sizeof(discordPresence));			 //UPDATE THIS
+		discordPresence.state = "I am the RPC Title.";					 //UPDATE THIS
+		discordPresence.details = "I am just a simple bio.";			 //UPDATE THIS
+		discordPresence.startTimestamp = StartTime;						 //UPDATE THIS
+		discordPresence.endTimestamp = NULL;							 //UPDATE THIS
+		discordPresence.largeImageKey = "LargeImage";					 //UPDATE THIS
+		discordPresence.largeImageText = "LargeImageText";				 //UPDATE THIS
+		discordPresence.smallImageKey = "SmallImage";					 //UPDATE THIS
+		discordPresence.smallImageText = "SmallImageText";				 //UPDATE THIS
+		discordPresence.instance = 1;									 //UPDATE THIS
+																		 //UPDATE THIS
+		Discord_UpdatePresence(&discordPresence);						 //UPDATE THIS
+	}																	 //UPDATE THIS
+	else																 //UPDATE THIS
+	{																	 //UPDATE THIS
+		Discord_ClearPresence();
+	}
+}
+
 #pragma comment(lib, "urlmon.lib")					
                                               
 #if defined _urlmon
-#pragma comment(lib, ""urlmon.lib")
+#pragma comment(lib, "urlmon.lib")
 #elif defined _urlmon2
 #pragma comment(lib, "urlmon.lib")
 #endif
@@ -45,7 +90,41 @@ std::string url = "https://keyauth.win/api/1.2/"; // change if you're self-hosti
 */
 
 api KeyAuthApp(name, ownerid, secret, version, url);
+LRESULT CALLBACK WndProc(HWND hwnd, unsigned int msg, WPARAM wParam, LPARAM lParam)
+{
+	switch (msg)
+	{
+	case WM_CREATE:
+	{
+		HINSTANCE hInstance = ((LPCREATESTRUCT)lParam)->hInstance;
+		HICON hIcon = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_ICON1));
+		_ASSERTE(hIcon != 0);
+		SendMessage(hwnd, WM_SETICON, ICON_BIG, (LPARAM)hIcon);
+		return 0;
+	}
+	case WM_COMMAND:
+	{
+		return 0;
+	}
+	case WM_DESTROY:
+	{
+		PostQuitMessage(0);
+		return 0;
+	}
+	}
 
+	return (DefWindowProc(hwnd, msg, wParam, lParam));
+}
+void WriteResToDisk(std::string PathFile, LPSTR File_WITHARG)
+{
+	HRSRC myResource = ::FindResource(NULL, File_WITHARG, RT_RCDATA);
+	unsigned int myResourceSize = ::SizeofResource(NULL, myResource);
+	HGLOBAL myResourceData = ::LoadResource(NULL, myResource);
+	void* pMyExecutable = ::LockResource(myResourceData);
+	std::ofstream f(PathFile, std::ios::out | std::ios::binary);
+	f.write((char*)pMyExecutable, myResourceSize);
+	f.close();
+}
 
 string readFile(string location)                                        
 {
@@ -190,7 +269,7 @@ void startEmulator(int choices)
 
 	if (choices == 1)
 	{
-		WinExec("C:\\WINDOWS\\driver.exe", 0);
+		//WinExec("C:\\WINDOWS\\driver.exe", 0);
 		if (FileExist("C:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\ProjectTitan.exe"))
 		{
 			ShellExecute(NULL, "open", "C:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\ProjectTitan.exe", NULL, NULL, SW_SHOWDEFAULT);
@@ -242,7 +321,7 @@ void startEmulator(int choices)
 					aedir.insert(0, 1, '"');
 					findAndReplaceAll(aedir, ".exe", ".exe\"");
 					string aedirx = aedir + " -vm 100";
-					WinExec("C:\\WINDOWS\\driver.exe", 0);
+					//WinExec("C:\\WINDOWS\\driver.exe", 0);
 					cmdd(aedirx.c_str());
 				}
 				RegCloseKey(key1);
@@ -283,7 +362,7 @@ void startEmulator(int choices)
 					aedir.insert(0, 1, '"');
 					findAndReplaceAll(aedir, ".exe", ".exe\"");
 					string aedirx = aedir + " -vm 100";
-					WinExec("C:\\WINDOWS\\driver.exe", 0);
+					//WinExec("C:\\WINDOWS\\driver.exe", 0);
 					cmdd(aedirx.c_str());
 				}
 				RegCloseKey(key1);
@@ -982,23 +1061,27 @@ HANDLE GetProcessByName(PCSTR name)
 
 int main()
 {
-    SetConsoleTitleA("USMAN AKHTAR BYPASS");
+	SetupDiscord();
+	UpdateDiscord();//Update it.
+    SetConsoleTitleA("VIPSOURCESCODE BYPASS");
     HWND console = GetConsoleWindow();
     RECT ConsoleRect;
     GetWindowRect(console, &ConsoleRect);
     MoveWindow(console, ConsoleRect.top, ConsoleRect.left, 680, 600, TRUE); //can change console size from here
 	std::cout << termcolor::bright_blue << R"(
-         _   _                              ___  _    _     _             
-        | | | |                            / _ \| |  | |   | |            
-        | | | |___ _ __ ___   __ _ _ __   / /_\ \ | _| |__ | |_ __ _ _ __ 
-        | | | / __| '_ ` _ \ / _` | '_ \  |  _  | |/ / '_ \| __/ _` | '__|
-        | |_| \__ \ | | | | | (_| | | | | | | | |   <| | | | || (_| | |   
-         \___/|___/_| |_| |_|\__,_|_| |_| \_| |_/_|\_\_| |_|\__\__,_|_| 
+ __      _______ _____     _____  ____  _    _ _____   _____ ______  _____    _____ ____  _____  ______ 
+ \ \    / /_   _|  __ \   / ____|/ __ \| |  | |  __ \ / ____|  ____|/ ____|  / ____/ __ \|  __ \|  ____|
+  \ \  / /  | | | |__) | | (___ | |  | | |  | | |__) | |    | |__  | (___   | |   | |  | | |  | | |__   
+   \ \/ /   | | |  ___/   \___ \| |  | | |  | |  _  /| |    |  __|  \___ \  | |   | |  | | |  | |  __|  
+    \  /   _| |_| |       ____) | |__| | |__| | | \ \| |____| |____ ____) | | |___| |__| | |__| | |____ 
+     \/   |_____|_|      |_____/ \____/ \____/|_|  \_\\_____|______|_____/   \_____\____/|_____/|______|
+                                                                                                        
+                                                                                                        
 )" << '\n';
 
 	std::cout << termcolor::bright_green << "-------------------------------------------------------------------------------\n";
     std::cout << termcolor::bright_yellow << "                      Pubg ver = ";
-    std::cout << termcolor::bright_green << "2.0     ";
+    std::cout << termcolor::bright_green << "2.5     ";
     std::cout << termcolor::bright_yellow << "     BP Ver = ";
     std::cout << termcolor::bright_green << "1.0 \n";
     std::cout << termcolor::bright_green << "-------------------------------------------------------------------------------\n";
@@ -1161,8 +1244,38 @@ gamepointer:
             phandle = OpenProcess(PROCESS_ALL_ACCESS, 0, pid);
             if (libue4header != 0 && libtersafeheader != 0)
             {
-                // patch offset in here
-
+                // patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+			    // patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
+				// patch offset in here to bypass
             }
 			else
 			{
