@@ -1,0 +1,85 @@
+﻿  connection_win.cpp
+  discord_register_win.cpp
+  discord_rpc.cpp
+  dllmain.cpp
+  Memory.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\filesystem(13): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(118,39): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(119,41): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(120,39): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(117,16): warning C4101: 'OldProtect2': unreferenced local variable
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(161,16): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(216,24): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(244,18): warning C4244: 'initializing': conversion from 'DWORD_PTR' to 'DWORD', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(246,51): warning C4312: 'type cast': conversion from 'DWORD' to 'LPCVOID' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(258,38): warning C4311: 'type cast': pointer truncation from 'PVOID' to 'DWORD'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(258,38): warning C4302: 'type cast': truncation from 'PVOID' to 'DWORD'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(258,38): warning C4244: '=': conversion from 'SIZE_T' to 'DWORD', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(292,43): warning C4244: 'argument': conversion from 'DWORD_PTR' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(298,82): warning C4244: 'argument': conversion from 'DWORD_PTR' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(305,48): warning C4244: 'argument': conversion from 'DWORD_PTR' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(312,82): warning C4244: 'argument': conversion from 'DWORD_PTR' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(332,21): warning C4244: 'argument': conversion from 'SIZE_T' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(335,20): warning C4244: 'return': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=DWORD_PTR
+          ]
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(344,21): warning C4244: 'argument': conversion from 'SIZE_T' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(347,20): warning C4244: 'return': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=DWORD_PTR
+          ]
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(356,21): warning C4244: 'argument': conversion from 'SIZE_T' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(359,38): warning C4244: 'return': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=DWORD_PTR
+          ]
+  rpc_connection.cpp
+  serialization.cpp
+  VipSourcesCode.Cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\filesystem(13): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(218,15): warning C4101: 'timeinfo': unreferenced local variable
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(217,11): warning C4101: 'rawtime': unreferenced local variable
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(257,15): warning C4101: 'timeinfo': unreferenced local variable
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(256,11): warning C4101: 'rawtime': unreferenced local variable
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(794,55): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(802,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(803,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(870,42): warning C4312: 'type cast': conversion from 'int' to 'LPCVOID' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(878,39): warning C4312: 'type cast': conversion from 'int' to 'BYTE *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(879,41): warning C4312: 'type cast': conversion from 'int' to 'BYTE *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(880,39): warning C4312: 'type cast': conversion from 'int' to 'BYTE *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(877,16): warning C4101: 'OldProtect2': unreferenced local variable
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(888,39): warning C4312: 'type cast': conversion from 'int' to 'BYTE *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(889,41): warning C4312: 'type cast': conversion from 'int' to 'BYTE *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(890,39): warning C4312: 'type cast': conversion from 'int' to 'BYTE *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(887,16): warning C4101: 'OldProtect2': unreferenced local variable
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(945,35): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(982,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(1050,39): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(1051,41): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(1052,39): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(1049,16): warning C4101: 'OldProtect2': unreferenced local variable
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(1057,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(1061,21): warning C4244: '=': conversion from '_Ty' to 'BYTE', possible loss of data
+          with
+          [
+              _Ty=DWORD_PTR
+          ]
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(1358,1): warning C4102: 'hackloop': unreferenced label
+  Generating code
+  Previous IPDB was built with incompatible compiler, fall back to full compilation.
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(49): warning C4715: 'getAowProcId': not all control paths return a value
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(87): warning C4715: 'getGagaProcId': not all control paths return a value
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(349): warning C4715: 'SINGLEAOBSCAN2': not all control paths return a value
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(337): warning C4715: 'SINGLEAOBSCAN': not all control paths return a value
+  All 1016 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+library_x64.lib(auth.obj) : warning LNK4099: PDB '' was not found with 'library_x64.lib(auth.obj)' or at ''; linking object as if no debug info
+library_x64.lib(utils.obj) : warning LNK4099: PDB '' was not found with 'library_x64.lib(utils.obj)' or at ''; linking object as if no debug info
+library_x64.lib(hmac_sha256.obj) : warning LNK4099: PDB '' was not found with 'library_x64.lib(hmac_sha256.obj)' or at ''; linking object as if no debug info
+library_x64.lib(sha256.obj) : warning LNK4099: PDB '' was not found with 'library_x64.lib(sha256.obj)' or at ''; linking object as if no debug info
+  Credit VipSourcesCode.vcxproj -> C:\Users\Administrator\Desktop\VipSourcesCode\x64\Release\Credit VipSourcesCode.exe

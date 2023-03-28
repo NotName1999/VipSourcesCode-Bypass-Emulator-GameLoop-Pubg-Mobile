@@ -1,0 +1,166 @@
+﻿  connection_win.cpp
+  discord_register_win.cpp
+  discord_rpc.cpp
+  dllmain.cpp
+  Memory.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\filesystem(13): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(25,8): error C2664: 'int strcmp(const char *,const char *)': cannot convert argument 1 from 'WCHAR [260]' to 'const char *'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(25,24): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\string.h(100,13): message : see declaration of 'strcmp'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(25,8): message : while trying to match the argument list '(WCHAR [260], const char [12])'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(63,8): error C2664: 'int strcmp(const char *,const char *)': cannot convert argument 1 from 'WCHAR [260]' to 'const char *'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(63,24): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\string.h(100,13): message : see declaration of 'strcmp'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(63,8): message : while trying to match the argument list '(WCHAR [260], const char [19])'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(118,39): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(119,41): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(120,39): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(161,16): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(216,24): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(244,18): warning C4244: 'initializing': conversion from 'DWORD_PTR' to 'DWORD', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(246,51): warning C4312: 'type cast': conversion from 'DWORD' to 'LPCVOID' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(258,38): warning C4311: 'type cast': pointer truncation from 'PVOID' to 'DWORD'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(258,38): warning C4302: 'type cast': truncation from 'PVOID' to 'DWORD'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(258,38): warning C4244: '=': conversion from 'SIZE_T' to 'DWORD', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(292,43): warning C4244: 'argument': conversion from 'DWORD_PTR' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(298,82): warning C4244: 'argument': conversion from 'DWORD_PTR' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(305,48): warning C4244: 'argument': conversion from 'DWORD_PTR' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(312,82): warning C4244: 'argument': conversion from 'DWORD_PTR' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(332,21): warning C4244: 'argument': conversion from 'SIZE_T' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(335,20): warning C4244: 'return': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=DWORD_PTR
+          ]
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(344,21): warning C4244: 'argument': conversion from 'SIZE_T' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(347,20): warning C4244: 'return': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=DWORD_PTR
+          ]
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(356,21): warning C4244: 'argument': conversion from 'SIZE_T' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\Memory.cpp(359,38): warning C4244: 'return': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=DWORD_PTR
+          ]
+  rpc_connection.cpp
+  serialization.cpp
+  VipSourcesCode.Cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\filesystem(13): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(121,23): error C2664: 'HRSRC FindResourceW(HMODULE,LPCWSTR,LPCWSTR)': cannot convert argument 2 from 'LPSTR' to 'LPCWSTR'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(121,42): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\libloaderapi.h(579,1): message : see declaration of 'FindResourceW'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(121,23): message : while trying to match the argument list '(int, LPSTR, LPWSTR)'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(285,2): error C2664: 'HINSTANCE ShellExecuteW(HWND,LPCWSTR,LPCWSTR,LPCWSTR,LPCWSTR,INT)': cannot convert argument 2 from 'const char [5]' to 'LPCWSTR'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(285,18): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\shellapi.h(96,22): message : see declaration of 'ShellExecuteW'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(285,2): message : while trying to match the argument list '(int, const char [5], const char [8], LPCSTR, int, int)'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(302,4): error C2664: 'HINSTANCE ShellExecuteW(HWND,LPCWSTR,LPCWSTR,LPCWSTR,LPCWSTR,INT)': cannot convert argument 2 from 'const char [5]' to 'LPCWSTR'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(302,23): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\shellapi.h(96,22): message : see declaration of 'ShellExecuteW'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(302,4): message : while trying to match the argument list '(int, const char [5], const char [70], int, int, int)'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(306,4): error C2664: 'HINSTANCE ShellExecuteW(HWND,LPCWSTR,LPCWSTR,LPCWSTR,LPCWSTR,INT)': cannot convert argument 2 from 'const char [5]' to 'LPCWSTR'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(306,23): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\shellapi.h(96,22): message : see declaration of 'ShellExecuteW'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(306,4): message : while trying to match the argument list '(int, const char [5], const char [70], int, int, int)'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(310,4): error C2664: 'HINSTANCE ShellExecuteW(HWND,LPCWSTR,LPCWSTR,LPCWSTR,LPCWSTR,INT)': cannot convert argument 2 from 'const char [5]' to 'LPCWSTR'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(310,23): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\shellapi.h(96,22): message : see declaration of 'ShellExecuteW'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(310,4): message : while trying to match the argument list '(int, const char [5], const char [70], int, int, int)'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(314,4): error C2664: 'HINSTANCE ShellExecuteW(HWND,LPCWSTR,LPCWSTR,LPCWSTR,LPCWSTR,INT)': cannot convert argument 2 from 'const char [5]' to 'LPCWSTR'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(314,23): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\shellapi.h(96,22): message : see declaration of 'ShellExecuteW'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(314,4): message : while trying to match the argument list '(int, const char [5], const char [70], int, int, int)'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(330,15): error C2664: 'LSTATUS RegOpenKeyExW(HKEY,LPCWSTR,DWORD,REGSAM,PHKEY)': cannot convert argument 2 from 'const _Elem *' to 'LPCWSTR'
+          with
+          [
+              _Elem=char
+          ]
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(330,61): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\winreg.h(780,1): message : see declaration of 'RegOpenKeyExW'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(330,15): message : while trying to match the argument list '(HKEY, const _Elem *, int, long, HKEY *)'
+          with
+          [
+              _Elem=char
+          ]
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(338,16): error C2664: 'LSTATUS RegOpenKeyW(HKEY,LPCWSTR,PHKEY)': cannot convert argument 2 from 'const _Elem *' to 'LPCWSTR'
+          with
+          [
+              _Elem=char
+          ]
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(338,57): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\winreg.h(755,1): message : see declaration of 'RegOpenKeyW'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(338,16): message : while trying to match the argument list '(HKEY, const _Elem *, HKEY *)'
+          with
+          [
+              _Elem=char
+          ]
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(343,17): error C2664: 'LSTATUS RegQueryValueExW(HKEY,LPCWSTR,LPDWORD,LPDWORD,LPBYTE,LPDWORD)': cannot convert argument 2 from 'const char [12]' to 'LPCWSTR'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(343,39): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\winreg.h(958,1): message : see declaration of 'RegQueryValueExW'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(343,17): message : while trying to match the argument list '(HKEY, const char [12], int, int, unsigned char *, DWORD *)'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(371,15): error C2664: 'LSTATUS RegOpenKeyExW(HKEY,LPCWSTR,DWORD,REGSAM,PHKEY)': cannot convert argument 2 from 'const _Elem *' to 'LPCWSTR'
+          with
+          [
+              _Elem=char
+          ]
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(371,61): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\winreg.h(780,1): message : see declaration of 'RegOpenKeyExW'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(371,15): message : while trying to match the argument list '(HKEY, const _Elem *, int, long, HKEY *)'
+          with
+          [
+              _Elem=char
+          ]
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(379,16): error C2664: 'LSTATUS RegOpenKeyW(HKEY,LPCWSTR,PHKEY)': cannot convert argument 2 from 'const _Elem *' to 'LPCWSTR'
+          with
+          [
+              _Elem=char
+          ]
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(379,57): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\winreg.h(755,1): message : see declaration of 'RegOpenKeyW'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(379,16): message : while trying to match the argument list '(HKEY, const _Elem *, HKEY *)'
+          with
+          [
+              _Elem=char
+          ]
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(384,17): error C2664: 'LSTATUS RegQueryValueExW(HKEY,LPCWSTR,LPDWORD,LPDWORD,LPBYTE,LPDWORD)': cannot convert argument 2 from 'const char [12]' to 'LPCWSTR'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(384,39): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\winreg.h(958,1): message : see declaration of 'RegQueryValueExW'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(384,17): message : while trying to match the argument list '(HKEY, const char [12], int, int, unsigned char *, DWORD *)'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(731,7): error C2664: 'int strcmp(const char *,const char *)': cannot convert argument 1 from 'WCHAR [260]' to 'const char *'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(731,16): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\string.h(100,13): message : see declaration of 'strcmp'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(731,7): message : while trying to match the argument list '(WCHAR [260], const char [22])'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(750,7): error C2664: 'int strcmp(const char *,const char *)': cannot convert argument 1 from 'WCHAR [260]' to 'const char *'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(750,16): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\string.h(100,13): message : see declaration of 'strcmp'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(750,7): message : while trying to match the argument list '(WCHAR [260], const char [17])'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(794,55): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(802,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(803,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(870,42): warning C4312: 'type cast': conversion from 'int' to 'LPCVOID' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(878,39): warning C4312: 'type cast': conversion from 'int' to 'BYTE *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(879,41): warning C4312: 'type cast': conversion from 'int' to 'BYTE *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(880,39): warning C4312: 'type cast': conversion from 'int' to 'BYTE *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(888,39): warning C4312: 'type cast': conversion from 'int' to 'BYTE *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(889,41): warning C4312: 'type cast': conversion from 'int' to 'BYTE *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(890,39): warning C4312: 'type cast': conversion from 'int' to 'BYTE *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(917,23): error C2664: 'HRSRC FindResourceW(HMODULE,LPCWSTR,LPCWSTR)': cannot convert argument 2 from 'LPCSTR' to 'LPCWSTR'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(917,50): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\libloaderapi.h(579,1): message : see declaration of 'FindResourceW'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(917,23): message : while trying to match the argument list '(int, LPCSTR, LPWSTR)'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(945,35): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(982,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(1050,39): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(1051,41): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(1052,39): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(1057,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(1061,21): warning C4244: '=': conversion from '_Ty' to 'BYTE', possible loss of data
+          with
+          [
+              _Ty=DWORD_PTR
+          ]
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(1102,14): error C2440: '<function-style-cast>': cannot convert from 'WCHAR [260]' to 'std::string'
+C:\Users\Administrator\Desktop\VipSourcesCode\Credit VipSourcesCode\VipSourcesCode.Cpp(1102,14): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+  Generating Code...
